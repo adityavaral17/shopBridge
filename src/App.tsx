@@ -1,10 +1,14 @@
 import "./App.css";
 
-import Login from "./component/Login";
+import LandingPage from "./component/Landing_Page/LandingPage";
+
+// import Login from "./component/Login/Login";
+
 function App() {
   return (
     <>
-      <Login />
+      {/* <Login /> */}
+      <LandingPage />
     </>
   );
 }
