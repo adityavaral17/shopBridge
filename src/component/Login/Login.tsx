@@ -24,7 +24,7 @@ const Login = () => {
   };
   return (
     <div className="login-wrapper">
-      <h1>Login</h1>
+      <h1>Sign in</h1>
 
       <Formik
         initialValues={{ email: "", password: "" }}
@@ -36,7 +36,7 @@ const Login = () => {
             <Form className="form-wrapper">
               <label className="email-field">
                 <span className="labels"> Email:</span>{" "}
-                <Field type="email" name="email" className="input-field" />
+                <Field type="email" name="email" placeholder="email@domain.com" className="input-field" />
                 <ErrorMessage className="error" name="email" component="div" />
               </label>
               <label className="password-field">
@@ -44,7 +44,9 @@ const Login = () => {
                 <Field
                   type="password"
                   name="password"
+                  placeholder="password"
                   className="input-field"
+                  
                 />
                 <ErrorMessage
                   className="error"
@@ -65,7 +67,7 @@ const Login = () => {
                   onClick={logout}
                   disabled={isSubmitting}
                 >
-                  Log out
+                  Sign Up
                 </button>
               </div>
             </Form>
